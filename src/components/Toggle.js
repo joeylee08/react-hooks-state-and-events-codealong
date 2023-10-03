@@ -1,7 +1,7 @@
 import React from "react";
 
-function Toggle() {
-  return <button>OFF</button>;
+function Toggle({isOn, handleClick}) {
+  return <button onClick={handleClick}>{isOn}</button>;
 }
 
 export default Toggle;
